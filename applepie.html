@@ -58,7 +58,8 @@
 
                 <div class="col-md-4">
                     <h3 class="my-3 text-capitalize">About this pie</h3>
-                    <p class="text-justify">Sweet ice cream jelly beans lemon drops. Pastry toffee fruitcake gingerbread jelly-o.
+                    <p class="text-justify">Sweet ice cream jelly beans lemon drops. Pastry toffee fruitcake gingerbread 
+                        jelly-o.
                         Lollipop <strong>sesame snaps muffin.</strong> Macaroon halvah marshmallow sesame snaps sugar plum dragée.
                         Wafer pudding sesame snaps tootsie roll sesame snaps cake chupa chups jelly beans.</p>
                     <h3 class="my-3">Ingredients</h3>
@@ -73,7 +74,8 @@
                             <strong>$14.95</strong>
                         </div>
                         <div class="col-md-8">
-                            <a type="button" href="shoppingbasket.html" class="btn btn-info float-right" >
+                            <a type="button" href="shoppingbasket.html" data-toggle="modal" data-target="#addToBasketModal"
+                             class="btn btn-info float-right" >
                                 Add to basket
                             </a>
                         </div>
@@ -148,6 +150,29 @@
             </div>
         </div>
     </main>
-</body>
+
+    <div class="modal fade" tabindex="-1" id="addToBasketModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Bethany's Pie Shop</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Apple pie was added to your basket</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Continue shopping</button>
+                    <button type="button" class="btn btn-primary">View basket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </body>
 
 </html>
