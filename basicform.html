@@ -18,16 +18,16 @@
             <form>
                 <div class="form-group">
                     <label for="userNameInput">User name</label>
-                    <input type="text" id="userNameInput">
+                    <input type="text" class="form-control" id="userNameInput">
                 </div>
                 <div class="form-group">
                     <label for="passwordInput">Password</label>
-                    <input type="password" id="passwordInput">
+                    <input type="password" class="form-control form-control-lg" id="passwordInput">
                 </div>
-                <div>
-                    <input type="checkbox" id="rememberMeCheck">
-                    <label for="rememberMeCheck">Remember me</label>
-                </div class="form-group">
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="rememberMeCheck">
+                    <label class="form-check-label form-control-sm" for="rememberMeCheck">Remember me</label>
+                </div>
                 <button type="submit" class="btn btn-primary">Log in</button>
             </form>
         </div>
@@ -37,15 +37,15 @@
         <div class="row">
             <form>
                 <div class="form-group row">
-                    <label for="userNameInput" class="col-sm-4">User name</label>
+                    <label for="userNameInput" class="col-sm-4 col-form-label">User name</label>
                     <div class="col-sm-8">
-                        <input type="text" id="userNameInput">
+                        <input type="text" class="form-control" id="userNameInput">
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="passwordInput" class="col-sm-4">Password</label>
+                    <label for="passwordInput" class="col-sm-4 col-form-label">Password</label>
                     <div class="col-sm-8">
-                        <input type="password" id="passwordInput">
+                        <input type="password" class="form-control" id="passwordInput">
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary">Log in</button>
